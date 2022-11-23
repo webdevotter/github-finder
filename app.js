@@ -1,6 +1,9 @@
 // Init Github
 const github = new GitHub;
 
+// Init UI
+const ui = new UI;
+
 const searchUser = document.getElementById('searchUser');
 
 // Search input event listener
@@ -17,6 +20,7 @@ searchUser.addEventListener('keyup', (e) => {
 
       } else {
         // Show profile
+        ui.showProfile(data.profile);
 
       }
     })
